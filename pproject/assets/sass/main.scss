@@ -1,0 +1,125 @@
+$text-main-color: #333333;
+$body-main-color: #f2f2f2;
+$selected-text-color: #00b6c6;
+$secondary-text-color: #777777;
+$main-font-family: "Roboto", sans-serif;
+$secondary-font-family: "Montserrat", sans-serif;
+$light-border-color: #f0f0f0;
+a,
+p,
+span {
+  font-family: $main-font-family;
+  color: $text-main-color;
+}
+
+li {
+  list-style: none;
+}
+body {
+  font-family: $main-font-family;
+  color: $text-main-color;
+}
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 100px;
+  .topHeader {
+    padding: 10px 0px;
+    border-bottom: 1px solid $light-border-color;
+    .topheadWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .leftSide {
+        display: flex;
+        .contact {
+          margin-right: 10px;
+        }
+        .contactLink {
+          text-decoration: none;
+        }
+      }
+      .rightSide {
+        .socialsWrapper {
+          display: flex;
+          .socials {
+            ul {
+              margin-bottom: 0px;
+              display: flex;
+              padding-left: 5px;
+              li {
+                margin-right: 3px;
+                &:last-child {
+                  margin-right: 0px;
+                }
+              }
+              .socialsIcon {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottomHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px;
+    .logo {
+      .logowrapper {
+        max-height: 65px;
+        .logoImg {
+          object-fit: cover !important;
+          max-height: 65px;
+        }
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0px;
+    }
+    .navElements {
+      display: flex;
+      margin-bottom: 0px;
+      // &:last-child {
+      //   a {
+      //     padding-right: 0px;
+      //   }
+      // }
+      .navElement {
+        padding: 10px;
+        font-family: $secondary-font-family;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 15px;
+        text-decoration: none;
+        color: $secondary-text-color;
+        transition: 0.225s ease-in-out;
+        span {
+          transition: 0.225s ease-in-out;
+        }
+        &:hover {
+          color: $selected-text-color;
+          span {
+            color: $selected-text-color;
+          }
+        }
+      }
+      .selected {
+        color: $selected-text-color !important;
+      }
+    }
+  }
+}
+body {
+  overflow-x: hidden;
+}
+#Intro {
+  max-width: 100vw;
+}
